@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Manzaracı Discord Server Survey Form</h1>
+            <p id="description">Please help us improve our server</p>
+        </header>
+
+        <div id="form-container">
+            <form id="survey-form">
+                <div class="survey-label">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label id="number-label" for="age">Age<span>(optional)</span></label>
+                    <input type="number" id="age" name="age" min="13" max="150" placeholder="Age">
+                </div>
+
+                <div>
+                    <p>What is your role in Manzaracı's discord server?</p>
+                    <select id="dropdown" name="role" required>
+                        <option disabled selected value>Your Role</option>
+                        <option value="king">King</option>
+                        <option value="queen">Queen</option>
+                        <option value="pleb">Pleb</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Would you invite your friend to Manzaracı's discord server?</p>
+                    
+                    <label>
+                        <input name="invite" value="yes" type="radio" checked>Yes
+                    </label>
+
+                    <label>
+                        <input name="invite" value="no" type="radio">No
+                    </label>
+
+                    <label>
+                        <input name="invite" value="notSure" type="radio">Not Sure
+                    </label>
+                </div>
+
+                <div>
+                    <p>What do you want to see more in the server?<span>(Check all that apply)</span></p>
+                    <label>
+                        <input name="prefer" value="competitions" type="checkbox">Competitions
+                    </label>
+
+                    <label>
+                        <input name="prefer" value="games" type="checkbox">Games
+                    </label>
+
+                    <label>
+                        <input name="prefer" value="musicSessions" type="checkbox">Music Sessions
+                    </label>
+                </div>
+
+                <div>
+                    <p>Any suggestions?</p>
+                    <textarea id="suggestions" name="suggestion" placeholder="Enter your suggestion here..."></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" id="submit"><b>Submit</b></button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
